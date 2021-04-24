@@ -30,9 +30,9 @@ describe('AppController (e2e)', () => {
   });
 
   describe('/movies', () => {
-    // it('GET', () => {
-    //   return request(app.getHttpServer()).get('/moives').expect(200).expect([]);
-    // });
+    it('GET', () => {
+      return request(app.getHttpServer()).get('/movies').expect(200).expect([]);
+    });
     it('POST 201', () => {
       return request(app.getHttpServer())
         .post('/movies')
